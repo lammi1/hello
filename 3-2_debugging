@@ -1,0 +1,10 @@
+we can use help50 when code has syntax error.
+put help50 infront of make file.
+(in the cs50 sandbox.)
+
+But, in logical errors, we can use printf to see the each step.
+However, when we use CS50 IDE we can use debug50. (intergreated development environment = visual studio, eclipse, net beans..)
+we put debug50 infront of ./file
+when we click left of the space where number of line is, it creates red dot which is similar to stop sign.
+This is called break point.
+It stops on the red point, and when we click step over, it allows user step through my code step by step.
