@@ -1,0 +1,39 @@
+compiling has 4 steps
+
+clang do those steps for you.
+
+1. preprocessing 전처리
+2. compiling 컴파일
+3. assembling 어셈블
+4. linking 링크
+
+preprocessing changes # to code that  is actually used in the code. 
+For example, #include <stdio.h> changes into int printf(string format, ...);
+so, it's still on a c language
+
+Compiling is changes c to assembly code which is much easier to understand in CPU.
+It is an alterantive language back in the day.
+It looks difficult but some are familiar.
+main:
+  callq get_string
+  callq printf
+  
+it is little closer to what the CPU the brain of the computer actually understand.
+left part of the assembly code are called instruction. 명령어
+Intle or AMD, the company makes CPU, what those CPU understand is these very very low level operation like this.
+This related to moving things around memory, copying things, reading,  puting things on a screen, but much more harder way than c is.
+
+
+Assembling 
+after source code is changes to assembly code. have to change to machine code.
+assembling gets assembly code for input, and put machine code with 0 and 1 for output.
+
+Linking is link machine code which is more than 1.
+We include header file to use function which is in those libraries. 
+So, we get function code when it is preprocessing, and it is also turn to machine code when assembling.
+But, it is not yet linked. So, linking puts those code in to one file.
+For example, hello.c are involved with few different files.
+stdio.h, cs50.h are each file that clang has to compile.
+clang has to compile three different files.
+if we have to clnag 3 times for each of the files, it would be super tedious. 지루한
+Combine all of those 0s and 1s from the files are involved in to big file.
