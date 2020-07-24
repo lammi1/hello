@@ -1,0 +1,21 @@
+Arrays
+
+datatype
+There are lots of datatype
+bool : 1byte
+char
+int
+float
+long
+double
+string
+
+In computer, RAM acts a memory 
+So, when we run the program, data are stored in RAM.
+
+In C, if you know there are more than one variable, and there are all kind of relative, you can use array.
+In C, if you want to have one variable, but that can store multiple values, you use which called arrays.
+Array is the list of values that can be all the same type in a variable of the same name.
+
+int scores[3];
+scores[0] = 72;
