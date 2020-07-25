@@ -1,0 +1,22 @@
+strings and arrays
+
+string is arrays of character.
+
+string에는 \0 null character, null terminated character. 널 문자, 널 종단 문자가 있다.
+문자열의 끝을 알려주기 위해서 널문자가 필요하다.
+
+그래서 string에 jung을 저장한다고 할 때, 그 string은 글자수 + 1 만큼의 byte가 필요하다. 
+null은 8bits of 0로 만들어진다.
+
+string names[];
+names[0] = "EMMA";
+names[1] = "JUNG";
+names[2] = "BRIAN";
+
+printf("%s\n", names[0]);
+printf(%c%c%c%c\n", names[0][0], names[0][1], names[0][2], names[0][3]);
+
+it is a two-dimensional array.
+2차원 배열이 생긴다.
+
+두번째 printf에서 하고 싶은 말은 결국 string은 문자의 배열이다.
