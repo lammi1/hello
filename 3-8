@@ -6,5 +6,12 @@ Literally, type the command after the line, and on a line, and it's an argument 
 argc == argument count
 argv == argument vector == array of argument
 
+return 1; // equivelent to exit
+        // if all was well, you would return 0, it means good, don't have problem.
+        // However, if something went wrong, return 1, to keep it simple. you could return 2 billion or something
 
+return 1 is a signal to a computer, this program did not suceed.
 
+In argv, first type word you type, the program name is stored in argv[0].
+The second word you type, the first argument you cared about, is an argv[1].
+if you print argv[0], you get ./exit .
