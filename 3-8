@@ -1,0 +1,10 @@
+명령행 인자
+command-line argument
+example of command-line argument is -o when we run clang we can change the output to a file of my choice name.
+Literally, type the command after the line, and on a line, and it's an argument in the sense of input to an argument.
+
+argc == argument count
+argv == argument vector == array of argument
+
+
+
