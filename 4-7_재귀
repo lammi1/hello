@@ -1,0 +1,20 @@
+이번 강의에서는 재귀, recursion에 대해서 배운다.
+재귀란 스스로를 계속 호출하는 것이다.
+if function is recursive, it literally references it's own name in it's own code.
+재귀함수는 내부에서 자기자신을 호출하는 것이다.
+Recursion is when a function calls itself.
+
+높이 4의 피라미드를 만들려고 할때
+높이 4의 피라미드는 높이 3의 피라미드에서 1줄을 추가한 것이다.
+높이 3은 높이 2의 피라미드에서 한 줄을 추가한 것이고 
+높이 2의 피라미드는 높이 1의 피라미드에서 한 줄을 추가한 것이다.
+이것을 재귀적 정의라고 한다. recursive definition of just a pysical object or virtual object where by you can descibe a structure of an something in terms of itself.
+
+여기서 예외적인 상황이 있는데 
+높이 0의 피라미드는 아무것도 아니니까 return, exit, quit 무엇이든 알고리즘에 맞게 처리를 해야한다.
+그래서 시작점에 대해서는 특별한 경우이므로 다시 자기자신을 호출하지 않게 알려줘야 한다.-> 하드코딩된 조건문으로 의미없는 반복을 막는 것이다.
+
+
+마지막으로 google에 recursion을 치면 
+Did you mean recursion? 이라고 나온다.
+그럼 여기까지
