@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int *x;
+  int *y;
+  
+  x = malloc(sizeof(int));
+  *x = 42;
+  
+  y = x;
+  *y = 13;
+ }
+ 
+ 
+ pointer는 pointee, 메모리를 할당해 줘야 한다. 
+ 위에 코드에서 y = x를 없애면 버그가 생긴다. y에 어떤 메모리가 할당될 지 모르기 때문에 garbage value가 있다고 봐야한다.
+ 그러면 seg fall 이라던지 오류가 발생한다.
+ y = x를 쓰면 같은 pointee를 공유한다.
+ 그래서 *y = 13;이라고 쓰면 위에서 쓴 42라는 값은 13으로 덮어씌여진다.
